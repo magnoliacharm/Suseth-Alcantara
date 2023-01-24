@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- CDN BOOSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"-->
+
+    <!-- CDN BOOSTRAP VAPOR-->
+    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
 
     <!--CSS -->
     <link rel="stylesheet" href="style.css">
@@ -22,24 +25,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--CDN FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
 </head>
 
 <body>
 
     <header>
-        <div class="logo">
+        <!-- <div class="logo">
             <img width="100" alt="logo-magnolia" src="./assets/logo-magnolia.png" />
             <h1>Magnolia Charm</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="./pages/about-us.html">about us</a></li>
-                <li><a href=./pages/bags.html">bags</a></li>
-                <li><a href="./pages/blog.html">blog</a></li>
-                <li><a href="./pages/contact-us.html">contact us</a></li>
-            </ul>
+        </div>-->
+        <!-- BOOTSTRAP NAV BAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Magnolia Charm</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/bags.html">Bags</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/blog.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <main class="container">
@@ -76,7 +111,7 @@
 
 
 
-        
+
     </footer>
     <!-- WOW JS-->
     <script src="js/wow.min.js"></script>

@@ -14,26 +14,10 @@
     transform: scale(1.5);
 }
 
-header{
-    display: flex;
-    height: 80px;
-    background-color: #98B285;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-    header nav ul{
-        display: flex;
-        height: 80px;
-        background-color: #98B285;
-        justify-content: space-between;
-        align-items: center;
-        list-style-type: none;
-    }
         header nav ul li a{
             text-decoration: none;
-            color:rgb(108, 174, 113)
         }
+        
 
 .logo{
     display: flex;
@@ -47,12 +31,8 @@ header{
 
 nav a{
     font-weight: 50;
-    padding: 10px;
-    background-color: #000000;
 }
-nav a:hover{
-background: azure;
-}
+
 
 h1{
     font-weight:40px;
@@ -74,7 +54,7 @@ logo-magnolia.png{
 
 .title{
     font-size: 2rem;
-    color:#374d31;
+    color:#3e314d;
     position:absolute;
     left:10%;
     right:10%;
@@ -102,7 +82,7 @@ logo-magnolia.png{
     display:block;
     margin:20px auto;
     border-radius:10px;
-    background:green;
+    background:#200080;
     text-transform: uppercase;
     text-align:center;
     text-decoration:none;
@@ -185,13 +165,13 @@ section div {
     }
 
     footer{
-        background-color: #374d31;
+        background-color: #d3d3d3;
         display: flex;
         height: 80px;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        color: #ffffff;
+        color: #000000;
     }
     
         .fa {
