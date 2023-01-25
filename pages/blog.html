@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 
+ <!--CDN CSS-->
+ <link rel="stylesheet" href="../style.css">
+
+ <!-- CDN BOOSTRAP VAPOR-->
+ <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+
+    <!--CDN FONTAWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 <!--CDN ANIMATE --> 
 <link rel="stylesheet"
@@ -21,17 +32,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img width="100" alt="logo-magnolia" src="../assets/logo-magnolia.png" />
-            <h1>Magnolia Charm</h1> 
-        </div>
-        <nav>
-            <ul> 
-                <li><a href="../index.html">home</a></li>
-                <li><a href="./about-us.html">about us</a></li>
-                <li><a href="./bags.html">bags</a></li>
-                <li><a href="./blog.html">blog</a></li>
-                <li><a href="./contact-us.html">contact us</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Magnolia Charm</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./bags.html">Bags</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a href="/pages/bags.html" class="fa-solid fa-cart-shopping" ></a> 
+
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -61,11 +92,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
             
     
             <ul>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
             </ul>
             
         </footer>
+        <!-- BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 
 </body>
 </html>
