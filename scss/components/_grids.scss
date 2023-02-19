@@ -1,0 +1,53 @@
+
+#home {
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-column-gap: 40px;
+    margin:40px 0;
+
+	.imghome {
+		width: 100%;
+	}
+	
+	.text1 {
+		text-align: justify;
+	}
+	
+}
+
+#about-us {
+	display: grid;
+	grid-template-columns: 65% 30%;
+	grid-column-gap: 5%;
+	padding:40px 15px;
+	max-width:1200px;
+	margin:0 auto;
+
+	img {
+		max-width: 100%;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+}
+
+
+#bags {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 40px;
+	text-align: center;
+
+	img {
+		border-radius: 10px;
+		width: 300px;
+	}
+
+    .collection {
+        padding: 40px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #cccccc;
+        margin-bottom: 40px;
+    }
+}
