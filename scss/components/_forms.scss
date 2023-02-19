@@ -1,0 +1,21 @@
+.containerform {
+	width: 60%;
+	max-width: 1200px;
+	text-align: center;
+	padding: 25px 25px;
+	margin: 40px auto;
+	background-color: $graycolor;
+
+	form {
+		h2 {
+			text-align: center;
+		}
+	}
+	
+	.style1 {
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+	}
+}

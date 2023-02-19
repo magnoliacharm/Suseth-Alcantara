@@ -1,40 +1,66 @@
-/* COLORS*/
 * {
   padding: 0;
   margin: 0;
   font-family: "Roboto Slab", serif;
 }
 
-/*HOME*/
-.container {
+.mediaindex .container {
   width: 100%;
   max-width: 1200px;
   padding: 0 15px;
   margin: 40px auto;
 }
-.container h1 {
-  font-weight: 40px;
-  margin-bottom: 20px;
-}
-
-.container-left {
+.mediaindex .container-left {
   position: relative;
   overflow: hidden;
 }
-.container-left .title {
+.mediaindex .container-left .title {
   font-size: 2rem;
-  color: #3e314d;
+  color: #cbcbd1;
   position: absolute;
   left: 10%;
   right: 10%;
   top: 10%;
   max-width: 100%;
 }
-.container-right {
+.mediaindex .container-right {
   position: relative;
   overflow: hidden;
 }
-.container-right a {
+.mediaindex h1 {
+  font-weight: 40px;
+  margin-bottom: 20px;
+}
+
+.containeriframe {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 10px auto;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.containeriframe .texth3 {
+  background-color: linear-gradient(#dededd, rgba(173, 184, 255, 0));
+  color: black;
+}
+.containeriframe .iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  background-color: rgb(204, 204, 204);
+  padding: 20px;
+  flex: 100%;
+}
+
+.container {
+  margin: 20px;
+}
+
+body main a {
   width: 100%;
   max-width: 140px;
   display: block;
@@ -48,6 +74,10 @@
   padding: 10px;
   color: #ffffff;
 }
+body main a:hover {
+  transform: scale(1.5);
+  color: #ffffff;
+}
 
 .navbar .fa-solid {
   background-color: #ffffff;
@@ -59,6 +89,7 @@
   display: grid;
   grid-template-columns: 70% 30%;
   grid-column-gap: 40px;
+  margin: 40px 0;
 }
 #home .imghome {
   width: 100%;
@@ -66,31 +97,19 @@
 #home .text1 {
   text-align: justify;
 }
-#home .bagsb a:hover {
-  transform: scale(1.5);
-  color: #ffffff;
-}
 
 #about-us {
   display: grid;
-  grid-template-columns: 70% 30%;
-  grid-column-gap: 40px;
+  grid-template-columns: 65% 30%;
+  grid-column-gap: 5%;
+  padding: 40px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #about-us img {
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
-}
-
-section div {
-  background-color: rgb(204, 204, 204);
-  padding: 80px;
-  display: flex;
-  align-items: center;
-}
-
-.iframe {
-  width: 570px;
 }
 
 #bags {
@@ -103,8 +122,7 @@ section div {
   border-radius: 10px;
   width: 300px;
 }
-
-.collection {
+#bags .collection {
   padding: 40px;
   border-radius: 10px;
   position: relative;
@@ -113,44 +131,13 @@ section div {
   margin-bottom: 40px;
 }
 
-#blog article {
-  margin-bottom: 40px;
-}
-#blog article h2 {
-  margin-bottom: 20px;
-}
-
-.contbsc {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.contbsc .btn--believe {
-  background-color: #f8b9ff;
-  padding: 10px;
-  text-align: center;
-  width: 100px;
-}
-.contbsc .btn--share {
-  background-color: #ca93f5;
-  padding: 10px;
-  text-align: center;
-  width: 100px;
-}
-.contbsc .btn--create {
-  background-color: #9d6eeb;
-  padding: 10px;
-  text-align: center;
-  width: 100px;
-}
-
 .containerform {
   width: 60%;
   max-width: 1200px;
   text-align: center;
   padding: 25px 25px;
   margin: 40px auto;
-  background-color: rgb(240, 240, 240);
+  background-color: #cbcbd1;
 }
 .containerform form h2 {
   text-align: center;
@@ -165,10 +152,10 @@ section div {
 footer {
   background-color: #d3d3d3;
   display: flex;
-  height: 80px;
+  height: 100px;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   color: #000000;
 }
 footer .fa {
@@ -180,7 +167,7 @@ footer .fa {
   border-radius: 40px;
 }
 footer .fa-brands {
-  background-color: #ffffff;
+  background-color: #cbcbd1;
   padding: 10px;
   border-radius: 40px;
 }
@@ -189,7 +176,6 @@ footer .fa-brands {
   .title {
     font-size: 2rem;
     color: #3e314d;
-    position: absolute;
     left: 10%;
     right: 10%;
     top: 10%;
@@ -213,9 +199,11 @@ footer .fa-brands {
     margin-bottom: 20px;
   }
   section div {
-    background-color: rgb(204, 204, 204);
+    color: #ffffff;
+    background-color: #cbcbd1;
     padding: 20px;
     display: flex;
+    justify-content: center;
   }
   .texth3 {
     font-size: 10px;
@@ -232,7 +220,7 @@ footer .fa-brands {
     text-align: center;
     padding: 15px 15px;
     margin: 30px auto;
-    background-color: rgb(78, 0, 166);
+    background-color: #3925be;
   }
   .containerform form h2 {
     color: rgb(240, 240, 240);
@@ -246,12 +234,14 @@ footer .fa-brands {
     color: #ffffff;
     font-size: 15px;
   }
+  footer a {
+    color: #ffffff;
+  }
 }
 @media screen and (max-width: 575px) {
   .title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #3e314d;
-    position: absolute;
     left: 10%;
     right: 10%;
     top: 10%;
@@ -267,10 +257,11 @@ footer .fa-brands {
     margin-bottom: 20px;
   }
   section div {
-    background-color: rgb(204, 204, 204);
+    color: #ffffff;
+    background-color: #3925be;
     padding: 10px;
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
   .texth3 {
     font-size: 10px;
@@ -293,7 +284,7 @@ footer .fa-brands {
     text-align: center;
     padding: 10px 10px;
     margin: 20px auto;
-    background-color: rgb(78, 0, 166);
+    background-color: #3925be;
   }
   .containerform form h2 {
     color: rgb(240, 240, 240);
@@ -307,4 +298,13 @@ footer .fa-brands {
     color: #ffffff;
     font-size: 10px;
   }
+  footer a {
+    color: #ffffff;
+  }
+}
+#blog article {
+  margin-bottom: 40px;
+}
+#blog article h2 {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

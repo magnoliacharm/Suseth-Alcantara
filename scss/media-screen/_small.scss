@@ -1,0 +1,80 @@
+
+@media screen and (max-width: 575px) {
+	.title {
+		font-size: 1.5rem;
+		color: #3e314d;
+		left: 10%;
+		right: 10%;
+		top: 10%;
+		max-width: 100%;
+	}
+
+	#about-us {
+		display: grid;
+		grid-template-columns: 100%;
+
+		img {
+			max-width: 30%;
+			border-radius: 10px;
+			margin-bottom: 20px;
+		}
+	}
+
+	section {
+		div {
+			color: $whitecolor;
+			background-color:$fancycolor;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	.texth3 {
+		font-size: 10px;
+	}
+
+	.iframe {
+		width: 50%;
+	}
+
+	#bags {
+		display: block;
+		margin: 0 auto;
+		grid-template-columns: 50%;
+		text-align: center;
+
+		img {
+			border-radius: 5px;
+			width: 200px;
+		}
+	}
+
+	.containerform {
+		width: 40%;
+		text-align: center;
+		padding: 10px 10px;
+		margin: 20px auto;
+		background-color: $fancycolor;
+
+		form {
+			h2 {
+				color: rgb(240, 240, 240);
+			}
+		}
+	
+		label {
+			color: #d3d3d3;
+		}
+	}
+
+	footer {
+		background-color: #000000;
+		padding: 10px;
+		color: #ffffff;
+		font-size: 10px;
+		a{
+			color:$whitecolor;
+		}
+	}
+}
